@@ -1,4 +1,4 @@
-import { key } from '../environment/keyApi.js'
+import { key } from '../../environment/keyApi.js'
 
 export async function fetchMovieData(link) {
   const url = link
@@ -13,6 +13,6 @@ export async function fetchMovieData(link) {
   const fetching = await fetch(url, options)
   const { results } = await fetching.json()
   
-  return await results
+  return results
 }
 
