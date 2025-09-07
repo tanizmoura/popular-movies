@@ -11,8 +11,6 @@ if (localStorage.getItem('fav-movies')) {
     favMovies = JSON.parse(localStorage.getItem('fav-movies'))
 }
 
-console.log(favMovies)
-
 function clear() {
     main.innerHTML = ''
 }
