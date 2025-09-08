@@ -1,4 +1,3 @@
-import { key } from '../../environment/keyApi.js'
 
 export async function fetchMovieData(link) {
   const url = link
@@ -6,7 +5,7 @@ export async function fetchMovieData(link) {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: key.src
+      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0NDM1MTlmY2MzZjQzM2RkNDdjYTg0YzkxMzVkZWZjMyIsIm5iZiI6MTc1NjEzOTQyOC4wMTEwMDAyLCJzdWIiOiI2OGFjOGZhNGEzYzk0N2FjNWI4ZDI3M2YiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.lVHTi57x1pfuQkfPQosabIZii38GU2OXhRTrPzgWDNw'
     }
   }
 

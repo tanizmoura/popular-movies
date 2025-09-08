@@ -1,5 +1,4 @@
-import { fetchMovieData } from './api.js'
-
+import {fetchMovieData} from './api.js'
 const main = document.getElementById('main')
 const checkBoxFav = document.getElementById('checkbox-fav')
 const searchButton = document.getElementById('search-button')
